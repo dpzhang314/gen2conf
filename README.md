@@ -2,7 +2,7 @@
 some configurations on gentoo linux for daily use. 
 
 ## Prepare to mount 
-'''
+```
   sudo mkdir /mnt/gentoo
   sudo mount /dev/sdxX /mnt/gentoo/
   sudo mount -t proc /proc/ /mnt/gentoo/proc/
@@ -14,4 +14,4 @@ some configurations on gentoo linux for daily use.
   sudo mount -t tmpfs -o nosuid,nodev,noexec shm /dev/shm
   sudo chmod 1777 /dev/shm
   sudo chroot /mnt/gentoo/ /bin/bash
-'''
+```
