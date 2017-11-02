@@ -68,12 +68,10 @@ emerge --ask net-wireless/wpa_supplicant net-wireless/wireless-tools
 
 ```
 
-/etc/conf.d/net Force the use of wpa_supplicant
+    /etc/conf.d/net Force the use of wpa_supplicant
 
-```
-# Prefer wpa_supplicant over wireless-tools
-modules="wpa_supplicant"
-```
+    ## Prefer wpa_supplicant over wireless-tools
+    modules="wpa_supplicant"
 
 
 
