@@ -3,15 +3,14 @@ some configurations on gentoo linux for daily use.
 
 ## Preparing the disks
 
-###fdisk
-###parted
-###mkfs.ext4 etc
-```
-root # tar xvjpf stage3-*.tar.bz2 --xattrs --numeric-owner
+-fdisk
+-parted
+-mkfs.ext4 etc
 
-```
+    root # tar xvjpf stage3-*.tar.bz2 --xattrs --numeric-owner
 
 ## Prepare to mount 
+
 ```
 sudo mkdir /mnt/gentoo
 sudo mount /dev/sdxX /mnt/gentoo/
@@ -26,7 +25,9 @@ sudo chmod 1777 /dev/shm
 sudo cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 sudo chroot /mnt/gentoo/ /bin/bash
 ```
+
 ## Configure environment and portage
+
 ```
 source /etc/profile
 export PS1="(chroot) ${PS1}"
@@ -63,10 +64,8 @@ umount -R /mnt/gentoo
 
 ## Networking
 
-```
-emerge --ask net-wireless/wpa_supplicant net-wireless/wireless-tools
+    emerge --ask net-wireless/wpa_supplicant net-wireless/wireless-tools
 
-```
 
     /etc/conf.d/net Force the use of wpa_supplicant
 
