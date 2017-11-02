@@ -600,13 +600,13 @@ cxgb4/aq1202_fw.cld
 cxgb4/bcm8483.bin
 cxgb4/t4fw-1.14.4.0.bin
 cxgb4/t4fw-1.15.37.0.bin
-cxgb4/t4fw-1.16.45.0.bin
+cxgb4/t4fw-1.16.63.0.bin
 cxgb4/t4fw.bin
 cxgb4/t5fw-1.14.4.0.bin
 cxgb4/t5fw-1.15.37.0.bin
-cxgb4/t5fw-1.16.45.0.bin
+cxgb4/t5fw-1.16.63.0.bin
 cxgb4/t5fw.bin
-cxgb4/t6fw-1.16.45.0.bin
+cxgb4/t6fw-1.16.63.0.bin
 cxgb4/t6fw.bin
 dabusb/bitstream.bin
 dabusb/firmware.fw

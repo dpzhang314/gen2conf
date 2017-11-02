@@ -10,8 +10,8 @@ fi
 # User specific aliases and functions
 
 alias rm='rm -rvf'
-alias ls='ls -GFhl'
-alias ll='ls -FGlAhp'
+alias ls='ls -GFhl --color'
+alias ll='ls -FGlAhp --color'
 alias less='less -FSRXc'
 alias ..='cd ../'
 alias cd..='cd ../'

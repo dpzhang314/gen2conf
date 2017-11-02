@@ -9,10 +9,8 @@ sudo ln -s ~/dotfiles/etc/portage /etc/portage
 # resetting the profile link 
 sudo eselect profile set 6
 
-# /etc/fstab
-ln -s ~/dotfiles/etc/fstab /etc/fstab
-
-# 
+# default for grub2
+sudo ln -s ~/dotfiles/etc/default/grub /etc/default/grub
 
 
 # for oh-my-zsh
