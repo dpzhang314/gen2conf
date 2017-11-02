@@ -3,11 +3,11 @@ some configurations on gentoo linux for daily use.
 
 ## Preparing the disks
 
-*fdisk
+fdisk
 
-*parted
+parted
 
-*mkfs.ext4
+mkfs.ext4
 
     root # tar xvjpf stage3-*.tar.bz2 --xattrs --numeric-owner
 
