@@ -3,13 +3,16 @@ some configurations on gentoo linux for daily use.
 
 ## Preparing the disks
 
--fdisk
--parted
--mkfs.ext4 etc
+fdisk
+
+parted
+
+mkfs.ext4 etc
 
     root # tar xvjpf stage3-*.tar.bz2 --xattrs --numeric-owner
 
 ## Prepare to mount 
+
 
 ```
 sudo mkdir /mnt/gentoo
@@ -66,8 +69,7 @@ umount -R /mnt/gentoo
 
     emerge --ask net-wireless/wpa_supplicant net-wireless/wireless-tools
 
-
-    /etc/conf.d/net Force the use of wpa_supplicant
+/etc/conf.d/net Force the use of wpa_supplicant
 
     ## Prefer wpa_supplicant over wireless-tools
     modules="wpa_supplicant"
