@@ -1,0 +1,10 @@
+# uses of php 7 ,php-fpm
+dev-lang/php cjk curl fpm gd imap mysql mysqli pdo zip truetype -apache2
+
+# uses for nginx 
+www-servers/nginx NGINX_MODULES_HTTP:auth_pam fancyindex geoip fastcgi
+
+# eselect php
+app-eselect/eselect-php fpm
+
+

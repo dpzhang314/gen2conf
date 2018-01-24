@@ -1,0 +1,7 @@
+# required by dev-db/mariadb-10.1.26-r1::gentoo[openssl]
+# required by @selected
+# required by @world (argument)
+# /usr/portage/profiles/package.mask:
+# Lars Wendler <polynomial-c@gentoo.org> (26 Aug 2016)
+# Masked while being tested and reverse deps aren't fully compatible
+#=dev-libs/openssl-1.1.0g

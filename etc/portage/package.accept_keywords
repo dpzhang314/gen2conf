@@ -1,0 +1,18 @@
+# required by net-dns/bind-tools-9.11.1_p3::gentoo[ssl]
+# required by @selected
+# required by @world (argument)
+#dev-libs/openssl ~amd64
+# required by shadowsocks-libev (argument)
+net-proxy/shadowsocks-libev ~amd64
+# required by ck-sources (argument)
+=sys-kernel/ck-sources-4.14.3 ~amd64
+# required by wps-office (argument)
+=app-office/wps-office-10.1.0.5707_alpha21 ~amd64
+# required by tmux-bash-completion (argument)
+=app-shells/tmux-bash-completion-9999 **
+# required by sublime-text (argument)
+=app-editors/sublime-text-3_p3143 ~amd64
+# required by vim-r (argument)
+=app-vim/vim-r-1.2.6 ~amd64
+# required by app-eselect/eselect-repository (argument)
+=app-eselect/eselect-repository-2 ~amd64

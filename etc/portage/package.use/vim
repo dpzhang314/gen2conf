@@ -1,1 +1,19 @@
-app-editors/vim  cscope python lua ruby perl
+app-editors/vim cscope lua python ruby perl
+# required by net-misc/openssh-7.5_p1-r1::gentoo[ssl,-static]
+# required by @selected
+# required by @world (argument)
+# required by media-libs/mesa-17.1.10::gentoo[-video_cards_i965,video_cards_i915,-video_cards_intel]
+# required by x11-base/xorg-server-1.19.5::gentoo[-minimal]
+# required by x11-drivers/nvidia-drivers-387.22::gentoo[X]
+# required by x11-base/xorg-drivers-1.19::gentoo[video_cards_nvidia]
+>=x11-libs/libdrm-2.4.82 video_cards_intel
+# required by app-text/texlive-core-2016-r5::gentoo[xetex]
+# required by dev-texlive/texlive-basic-2016::gentoo
+# required by dev-texlive/texlive-fontutils-2016::gentoo
+# required by virtual/latex-base-1.0::gentoo
+# required by dev-tex/pgf-3.0.1-r1::gentoo
+# required by dev-texlive/texlive-pictures-2016::gentoo
+# required by dev-texlive/texlive-latexextra-2016::gentoo
+# required by dev-texlive/texlive-xetex-2016::gentoo
+# required by texlive-xetex (argument)
+>=media-libs/harfbuzz-1.4.6-r2 icu

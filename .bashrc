@@ -10,8 +10,8 @@ fi
 # User specific aliases and functions
 
 alias rm='rm -rvf'
-alias ls='ls -GFhl --color'
-alias ll='ls -FGlAhp --color'
+alias ls='ls -GFh --color'
+alias ll='ls -alh --color'
 alias less='less -FSRXc'
 alias ..='cd ../'
 alias cd..='cd ../'
@@ -24,6 +24,7 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias cp='cp -rf'
 alias mv='mv -iv'
 alias du='du -lah --max-depth=1'
+alias ccache='CCAHCE_DIR=/var/tmp/ccache ccache -s'
 alias vi='vim'
 alias cls='clear'
 alias c='clear'
@@ -79,6 +80,7 @@ cyan=$'\[\e[1;36m\]'
 white=$'\[\e[1;37m\]'
 normal=$'\[\e[m\]'
 
+#PS1="$white[$magenta\u$white@$green\h$white:$cyan\W$yellow\$git_branch$white]\$ $normal"
 PS1="$white[$magenta\u$white@$green\h$white:$cyan\W$yellow\$git_branch$white]\$ $normal"
 #PS1="$red[\W$yellow\$git_branch$red]$ $normal"
 complete -cf sudo
@@ -104,4 +106,4 @@ complete -cf sudo
 
 
 # make normal user can excute the sbin tools
-export PATH=$PATH:/sbin
+export PATH=$PATH:/sbin:/usr/sbin

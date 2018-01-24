@@ -1,0 +1,54 @@
+#!/sbin/openrc-run
+### BEGIN INIT INFO
+# Provides:          v2ray
+# Required-Start:    $network $local_fs $remote_fs
+# Required-Stop:     $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: V2Ray proxy services
+# Description:       V2Ray proxy services
+### END INIT INFO
+
+# Acknowledgements: Isulew Li <netcookies@gmail.com>
+
+DESC=v2ray
+NAME=v2ray
+DAEMON=/usr/bin/v2ray/v2ray
+PIDFILE=/var/run/$NAME.pid
+SCRIPTNAME=/etc/init.d/$NAME
+
+
+# Function that starts the daemon/service
+start()
+{
+    mkdir -p /var/log/v2ray
+    # Return
+    #   0 if daemon has been started
+    #   1 if daemon was already running
+    #   2 if daemon could not be started
+    #   3 if configuration file not ready for daemon
+    ebegin "Starting v2ray services"
+    start-stop-daemon --start --exec "$DAEMON" --pidfile "$PIDFILE" --background -m  
+
+    # Add code here, if necessary, that waits for the process to be ready
+    # to handle requests from services started subsequently which depend
+    # on this one.  As a last resort, sleep for some time.
+    eend $?
+}
+
+#
+# Function that stops the daemon/service
+#
+stop()
+{
+    # Return
+    #   0 if daemon has been stopped
+    #   1 if daemon was already stopped
+    #   2 if daemon could not be stopped
+    #   other if a failure occurred
+    ebegin "Stopping v2ray services"
+    start-stop-daemon --stop  --exec "$DAEMON" --pidfile "$PIDFILE"
+    rm -f $PIDFILE
+    eend $?
+}
+

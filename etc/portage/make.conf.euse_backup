@@ -5,17 +5,14 @@
 CFLAGS="-mtune=generic -O2 -pipe -fomit-frame-pointer"
 CXXFLAGS="${CFLAGS}"
 CHOST="x86_64-pc-linux-gnu"
-#CPU_FLAGS_X86="mmx mmxext sse sse2 sse3"
-CPU_FLAGS_X86="avx avx2 fma3 mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3"
-
+CPU_FLAGS_X86="mmx mmxext sse sse2 sse3"
 # WARNING: Changing your CHOST is not something that should be done lightly.
 # Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
 # These are the USE and USE_EXPAND flags that were used for
 # buidling in addition to what is provided by the profile.
-USE="-bindist  bash-completion vim-syntax mmx mmxext sse sse2 sse3 alsa pulseaudio
-    vdpau"
+USE="-bindist bash-completion vim-syntax mmx mmxext sse sse2 sse3"
 
-FEATURES="ccache"
+FEATURES=" ccache "
 CCACHE_SIZE="2G"
 CCACHE_DIR="/var/tmp/ccache"
 PORTDIR="/usr/portage"
@@ -33,7 +30,6 @@ LINGUAS= "en zh_CN"
 GRUB_PLATFORMS="efi-64"
 ABI_X86="32 64"
 ACCEPT_LICENSE="*"
-#ACCEPT_KEYWORDS="~x86"
 
 AUTOCLEAN="yes"
 
@@ -41,5 +37,6 @@ AUTOCLEAN="yes"
 INPUT_DEVICES="evdev synaptics mouse keyboard"
 
 
-VIDEO_CARDS="i915 nvidia"
+VIDEO_CARDS="intel i915 "
+
 
